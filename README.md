@@ -9,12 +9,21 @@
 
 <h3>Resumo do projeto</h3>
 
-Projeto realizado para atender o Challenge do curso Iniciante em Programação G8 - ONE
-Realizado na Alura, visando a prática com a linguagem Javascript.
+<p>Projeto realizado para atender o Challenge do curso Iniciante em Programação G8 - ONE</p>
+<p></p>Realizado na Alura, visando a prática com a linguagem Javascript.</p>
 <p>Programa WEB para sorteio de nomes para o amigo secreto.</p>
-<b>Imagem:</b> 
+📸<b>Tela Principal:</b> 
 
 ![Tela do programa Web](assets/Screen1.png)
+
+❔ Instruções de uso
+  - Execute o programa no browser de sua preferencia abrindo o arquivo index.html
+  - insira os nomes um a um no campo <b>Digite um nome</b>
+  - Clique em <b>Adicionar</b>
+  - Caso insira um nome repetido o sistema irá emitir uma mensagem de alerta
+  - Quando finalizar a inclusão de todos os nomes clique em <b>Sortear amigo</b>
+  - Ao sortear um nome, o mesmo será excluído da <b>Lista de amigos</b> e será listado em <b>Amigo sorteado</b>
+  - Após sortear todos os nomes a <b>Lista de amigos</b> será esvaziada
 
 🔨 Funcionalidades do projeto
 
