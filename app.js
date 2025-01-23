@@ -37,6 +37,7 @@ function adicionarAmigo() {
 
 // ### função para atualizar a lista de amigos
 function atualizarAmigo() {
+    document.getElementById('listaAmigosTitulo').classList.remove('disabled');
     let listaAmigos = document.getElementById('listaAmigos');
     listaAmigos.innerHTML = '';
     amigos.forEach((amigo) => {
@@ -55,10 +56,10 @@ function atualizarAmigo() {
 
 function sortearAmigo() {
     if (amigos.length < 1) {
-        alert('Adicione pelo menos 2 amigos');
+        alert('Adicione pelo menos 1 amigo');
         return;
     }
-
+    document.getElementById('resultadoTitulo').classList.remove('disabled');
     let amigoSorteado = amigos[Math.floor(Math.random() * amigos.length)];
     
     let listaSorteado = document.getElementById('resultado');
@@ -75,5 +76,13 @@ function removerSorteado(amigoSorteado){
     let index = amigos.indexOf(amigoSorteado);
     if (index !== -1) {
         amigos.splice(index, 1);
+    } 
+    if (amigos.length < 1 ) {
+        document.getElementById('listaAmigosTitulo').classList.add('disabled');
+        // alert('Não tem mais amigos para sortear'+ amigos.length);
+    } else {
+      //  alert('Ainda tem amigos para sortear'+ amigos.length);
     }
+
+    
 }
